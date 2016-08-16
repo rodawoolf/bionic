@@ -1,0 +1,50 @@
+footer,
+header{
+    height: 200px;
+    background: linear-gradient(to top left, darkgreen, cornsilk);
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    background-color: #fff;
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #005580;
+    text-decoration: underline;
+}
+
+
+.clr {
+    clear:both;
+}
+
+ul.menu {
+     margin: 0; /* Обнуляем значение отступов */
+     padding: 4px; /* Значение полей */
+ }
+ul.menu li {
+
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+    list-style: none;
+    float: left;
+    width: 20%;
+
+}
+
+

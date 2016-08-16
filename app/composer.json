@@ -1,0 +1,15 @@
+{
+
+    "require": {
+        "doctrine/dbal": "^2.5",
+        "symfony/yaml": "^3.1",
+        "twig/twig": "~1.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": {
+            "Roda\\":        "src/",
+            "Roda\\Tests": "tests/"
+        }
+    }
+}

@@ -1,0 +1,4 @@
+.idea/
+.vagrant/
+app/vendor/
+*.log

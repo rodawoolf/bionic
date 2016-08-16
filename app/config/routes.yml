@@ -1,0 +1,60 @@
+
+home:
+  class: '\Roda\Controllers\MainController'
+  method: 'index'
+
+login:
+      class: '\Roda\Controllers\MainController'
+      method: 'test'
+
+getimg:
+      class: '\Roda\Services\Img'
+      method: 'img'
+
+user:
+    class: '\Roda\Controllers\User'
+    method: 'index'
+
+getuser:
+        class: '\Roda\Controllers\User'
+        method: 'getUser'
+
+getusers:
+        class: '\Roda\Controllers\User'
+        method: 'get'
+
+setuser:
+        class: '\Roda\Controllers\User'
+        method: 'addUser'
+
+adv:
+        class: '\Roda\Controllers\Adv'
+        method: 'index'
+
+getadv:
+        class: '\Roda\Controllers\Adv'
+        method: 'getAdv'
+
+getadvs:
+        class: '\Roda\Controllers\Adv'
+        method: 'get'
+
+setadv:
+       class: '\Roda\Controllers\Adv'
+       method: 'addAdv'
+
+comment:
+        class: '\Roda\Controllers\Comment'
+        method: 'index'
+
+getcomment:
+        class: '\Roda\Controllers\Comment'
+        method: 'getComment'
+
+getcomments:
+        class: '\Roda\Controllers\Comment'
+        method: 'get'
+
+setcomment:
+         class: '\Roda\Controllers\Comment'
+         method: 'addComment'

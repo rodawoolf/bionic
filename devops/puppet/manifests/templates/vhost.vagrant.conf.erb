@@ -1,0 +1,26 @@
+server {
+
+  server_name           bionic.local;
+  root /var/vagrant/app;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+
+  location ~* \.(jpg|jpeg|gif|png|css|js|ico|xml)$ {
+    access_log        off;
+    log_not_found     off;
+    expires           360d;
+  }
+
+  location ~ \.php$ {
+    include /etc/nginx/fastcgi_params;
+    fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+    fastcgi_index index.php;
+    fastcgi_param SCRIPT_FILENAME /var/vagrant/app/$fastcgi_script_name;
+  }
+
+  access_log            /var/log/nginx/bionic.vagrant.access.log;
+  error_log             /var/log/nginx/bionic.vagrant.error.log;
+
+}
